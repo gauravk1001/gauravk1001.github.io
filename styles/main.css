@@ -1,0 +1,14 @@
+body {
+    align: center;
+    margin: auto;
+    width: 85%;
+}
+
+.section {
+    overflow: auto;
+}
+
+#external_links {
+    clear: both;
+    float: right;
+}
