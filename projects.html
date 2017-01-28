@@ -1,9 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+$(function(){
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+});
+</script>
 <head>
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>Gaurav's profile | Software Engineer</title>
+    <title>Gaurav Kshirsagar | Software Engineer</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="Gaurav Kshirsagar, Computer Science, UB, profile, resume, project, academic, interests, career, extra curricular, job, research, internship" />
@@ -14,33 +21,115 @@
 </head>
 <body>
 
-<!-- start header -->
-<div id="header">
-    <h1><i>Gaurav Kshirsagar</i></h1>
-</div>
+    <!-- start header -->
+    <div id="header">
+    </div>
+    <!-- end header -->
 
-<!-- end header -->
-<!-- star menu -->
+        <!-- start page -->
+        <div id="page">
+            <br/>
 
-<div id="menu">
-		<span><a href="index.html">Home</a></span> |
-        <span><a href="projects.html">Projects</a></span>
-<!--		<li><a href="#">Blog</a></li>
-		<li><a href="#">Photos</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="#">Contact</a></li>-->
-</div>
+        	<!-- start content -->
+            </br>
+
+        	<div id="content">
+                <div class="post">
+                    <div class="title">
+                        <h2>INDEPENDENT PROJECTS</h2>
+                    </div>
+
+                    <p><b>Get Me A Sub(reddit) - A visually pleasing mask for <a href="https://www.reddit.com" target="_blank">Reddit</a> (Flask, Python, PRAW, D3 JS, Bootstrap), </b>Jan 2017</p>
+                    <ul>
+                        <li>Designed an app to be an interactive and visually pleasing front-wnd for Reddit, which is always very textual and overwhelming. </li>
+                        <li>Made features to search for a subreddit by name, subscribers and recent activity to find the most relevant subreddits for the given query.</li>
+                    </ul>
+
+                    <p><b>Friend Recommender System (Apache Hadoop, MapReduce Java), </b>Aug 2015</p>
+                    <ul>
+                        <li>Designed and implemented ‘People You May Know’ system used in networking websites. </li>
+                        <li>Extracted mutual friends from a social network graph of 50K users and recommended 10 other users to each user.</li>
+                    </ul>
+
+                    <p><b>Food Truck Locator for Uber coding challenge (Flask, Python, AJAX, Bootstrap),  </b>Dec 2015</p>
+                    <ul>
+                        <li>Created a maps-based app with for easily finding nearby food trucks with geolocation. </li>
+                    </ul>
+
+                    <p><b>Text Analysis and Entity Resolution with Amazon and Google Products (Apache Spark, Python),  </b>Sep 2015</p>
+                    <ul>
+                        <li>Performed data cleaning, matching, integration and analysis on Amazon and Google product datasets.</li>
+                    </ul>
+
+                    <p><b>Apache Server Log Analysis (Apache Spark, Python),  </b>Sep 2015</p>
+                    <ul>
+                        <li>Extracted the most frequently used words in Shakespeare’s works, filtering out punctuations and stopwords.</li>
+                    </ul>
+
+                    <p><b>Most Frequent Words in Shakespeare&#39;s Works (Apache Spark, Python),  </b>Aug 2015</p>
+                    <ul>
+                        <li>Extracted the most frequently used words in Shakespeare’s works, filtering out punctuations and stopwords.</li>
+                    </ul>
+                </div>
+
+                <br />
+
+        		<div class="post">
+        			<div class="title">
+        				<h2>ACADEMIC PROJECTS</h2>
+        			</div>
+
+                    <p><b>SVM-based Classification of Suerpixels of Images into  Labelled Groups (MATLAB, Classification), </b>Dec 2014</p>
+                    <ul>
+                        <li>Studied  various methods of categorizing parts of an image into meaningful classes </li>
+                        <li>Used  a Support Vector Machine classifier with varying parameters to extract useful  features from a training dataset of about 1,000-50,000 superpixels within  images and trained a model using  them</li>
+                        <li>Used  the model to predict the classes of superpixels that occur in other images and  reported the results of this experiment </li>
+                    </ul>
+
+                    <p><b>FindIn - An ad-serving system modeled on current search  engines (Java, JSP, Apache Solr), </b>Dec 2014</p>
+                    <ul>
+                        <li>Implemented  an Ad-serving application on Apache Solr platform which serves advertisements  related to news</li>
+                        <li>Built  a news search system that provides top 3 contextual advertisements served  alongside the news results which are based on a user input keyword</li>
+                        <li>The  concept behind ad-serving is be similar to what most search engines use today.  It is based on combination of Cost per click (CPC), bid price, relevance of the  advertisement to both the search as well as the query</li>
+                        <li>Entire  system was developed using Java, Servlets, HTML and Javascript and run on  Apache Tomcat</li>
+                    </ul>
+
+                    <p><b>Indexer and Searcher for a corpus of NY Times news articles (2  projects) (Java, Parsing, Indexing, Retrieval), </b>Oct 2014</p>
+                    <ul>
+                        <li>Parsed  a large corpus of news articles and listed fields like title, author, date,  place and content</li>
+                        <li>Tokenized  and filtered fields to create a dictionary. Indexed the tokens for quick access  and retrieval</li>
+                        <li>Gained  an understanding of the indexing and retrieval process in a search engine</li>
+                        <li>Implemented  a parser for user queries and constructed a hierarchy for its execution.  Evaluated the query and produced results based on the indexed corpus</li>
+                        <li>Scored  the results on the TF-IDF and Okapi weighting models and ranked them on  relevancy scores</li>
+                    </ul>
+
+                    <p><b>Data Analyzer and Modeler based on Socials Network (Twitter) Data, </b>Apr 2014</p>
+                    <ul>
+                        <li>Obtained live tweets from Twitter based on a input keyword using  Twitter Streaming API</li>
+                        <li>Extracted useful part of tweets and implemented NLTK Algorithm to  train a classifier using Python</li>
+                        <li>Classified the sentiment about the keyword as positive or negative</li>
+                        <li>Developed a sense of the public reaction to various products and events  to use in future projects</li>
+                    </ul>
+
+                    <p><b>Reearch Seminar: Body Motion Tracking &amp; study of Microsoft Kinect technology, </b>April 2013</p>
+                    <ul>
+                        <li>Presented a report on a study of the basics of Human Computing Interaction  with a focus Kinect technology</li>
+                        <li>Researched the techniques used by Kinect to track body motion and  suggested future applications</li>
+                    </ul>
+        		</div>
+
+                <br />
+            </div>
+        	<!-- end content -->
+        </div>
+        <!-- end page -->
 
 
-<!-- end menu -->
 
-<p>Page under development.</p>
+    <!-- start footer -->
+    <div id="footer">
+    </div>
+    <!-- end footer -->
 
-
-<!-- start footer -->
-<div id="footer">
-	<p class="legal"> &copy;2016 Gaurav Kshirsagar
-		&nbsp;&nbsp;&nbsp;&nbsp;
-</div>
-<!-- end footer -->
+</body>
 </html>
