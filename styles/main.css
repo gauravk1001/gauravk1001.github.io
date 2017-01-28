@@ -1,5 +1,8 @@
 body {
-    align: center;
+    margin: 0;
+}
+
+#page {
     margin: auto;
     width: 85%;
 }
@@ -8,7 +11,81 @@ body {
     overflow: auto;
 }
 
+#header {
+    background-color: #000000;
+    margin: 0;
+}
+
+#header_content {
+    margin: auto;
+    width: 85%;
+}
+
+#footer {
+    background-color: #77216F;
+}
+
+#footer_content {
+    margin: auto;
+    width: 85%;
+}
+
+
 #external_links {
     clear: both;
     float: right;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+}
+h1#name {
+    font-family: 'Ubuntu', sans-serif;
+    color: #E95420;
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #E95420;
+}
+
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+a:hover {
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: underline;;
+}
+
+li {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#menu {
+    color: #FFFFFF;
+}
+
+#menu a{
+    color: #FFFFFF;
+}
+
+#footer p {
+    color: #AEA79F;
+}
+
+#footer a {
+    color: #FFFFFF;
+}
+
+#footer h3 {
+    color: #FFFFFF;
 }
