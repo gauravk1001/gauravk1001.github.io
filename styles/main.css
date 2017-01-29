@@ -18,6 +18,7 @@ body {
 
 #header_content {
     margin: auto;
+    height: 140px;
     width: 85%;
 }
 
@@ -33,13 +34,13 @@ body {
 
 #external_links {
     clear: both;
-    float: right;
+    float: left;
 }
 
 h1 {
     font-family: 'Ubuntu', sans-serif;
 }
-h1#name {
+h1 a {
     font-family: 'Ubuntu', sans-serif;
     color: #E95420;
 }
@@ -88,4 +89,11 @@ li {
 
 #footer h3 {
     color: #FFFFFF;
+}
+
+#profile_picture {
+    height: 150px;
+    margin: auto auto auto auto;
+    right: 50px;
+    width: 150px;
 }
