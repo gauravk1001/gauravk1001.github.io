@@ -92,6 +92,13 @@ li {
 }
 
 #profile_picture {
+    height: 300px;
+    margin: auto auto auto auto;
+    right: 50px;
+    width: 300px;
+}
+
+#thumbnail_picture {
     height: 150px;
     margin: auto auto auto auto;
     right: 50px;
