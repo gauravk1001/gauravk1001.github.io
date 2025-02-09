@@ -226,12 +226,16 @@
 
 			$.ajax({      	
 
-		      type: "POST",
-		      url: "inc/sendEmail.php",
-		      data: $(form).serialize(),
-		      beforeSend: function() { 
+				type: "POST",
+				url: "inc/sendEmail.php",
+				headers: {
+					"Access-Control-Allow-Origin": "127.0.0.1:443",
+					"Access-Control-Allow-Origin-Methods": "POST"
+				},
+				data: $(form).serialize(),
+				beforeSend: function () {
 
-		      	sLoader.fadeIn(); 
+					sLoader.fadeIn(); 
 
 		      },
 		      success: function(msg) {
